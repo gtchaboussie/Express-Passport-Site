@@ -1,0 +1,31 @@
+<%- include('./_header.ejs');%>
+<%- include('./_error_display.ejs');%>
+
+<div class="container">
+    <h1 class="h1">Edit an article</h1>
+    <form action="/article/edit/<%= article._id%>" method="POST">
+
+        <!-- ARTICLE NAME -->
+        <div class="form-group">
+            <label for="article_name">Article name</label>
+            <input type="text" class="form-control" name="article_name" id="article_name"
+            <% if( article ){ %>
+                value="<%= article.article_name %>"
+            <%}%>
+            placeholder="Enter article name">
+        </div>
+
+        <!-- ARTICLE DESCRIPTION -->
+        <div class="form-group">
+            <label for="article_description">Article description</label>
+            <input type="text" class="form-control" name="article_description" id="article_description"
+            <% if( article ){ %>
+                value="<%= article.article_description %>"
+            <%}%>
+            placeholder="Enter article description">
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </form>
+</div>
+
+<%- include('./_footer.ejs');%>

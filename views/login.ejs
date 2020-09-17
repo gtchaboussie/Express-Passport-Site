@@ -1,0 +1,24 @@
+<%- include('./_header.ejs'); %>
+<%- include('./_login_display.ejs'); %>
+
+<div class="container">
+    <h1 class="h1">Login</h1>
+
+    <form action="/login" method="POST">
+        <!-- EMAIL ADRESS -->
+        <div class="form-group">
+            <label for="email_adress">Email address</label>
+            <input type="email" class="form-control" name="email_adress" id="email_adress"
+            placeholder="Enter email adress">
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<%- include('./_footer.ejs');%>

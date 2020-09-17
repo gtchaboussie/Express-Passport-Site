@@ -1,0 +1,32 @@
+<%- include('./_header.ejs');%>
+<%- include('./_error_display.ejs');%>
+
+<div class="container">
+    <h1 class="h1"> Say hi ! </h1>
+    <form action="/contact" method="POST">
+
+        <!-- NAME -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name"
+            placeholder="Enter your name">
+        </div>
+
+        <!-- OBJECT -->
+        <div class="form-group">
+            <label for="object">How can i help you ?</label>
+            <input type="text" class="form-control" name="object" id="oject"
+            placeholder="Specify the object">
+        </div>
+
+        <!-- BODY -->
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea type="text" class="form-control" name="message" id="message"
+            rows="3"> </textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+<%- include('./_footer.ejs');%>

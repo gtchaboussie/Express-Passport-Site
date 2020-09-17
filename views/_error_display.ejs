@@ -1,0 +1,11 @@
+<% if( errors ) { %>
+    <div class="container">
+        <ul class="list-group">
+            <% for(let i = 0; i < errors.length ; i++){ %>
+                <li class="list-group-item list-group-item-danger">
+                    <%= errors[i].msg; %>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+<% } %>

@@ -1,0 +1,14 @@
+<%- include('./_header.ejs');%>
+
+<div class="container">
+    <h1 class="h1">Logout</h1>
+    <br>
+    <br>
+    <p>Are you sure you want to logout ?</p>
+    <form action="/logout" method="POST">
+        <button type="submit" class="btn btn-danger">
+            Yes i'm sure, let me out of here !!</button>
+    </form>
+</div>
+
+<%- include('./_footer.ejs');%>
