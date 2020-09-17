@@ -42,7 +42,7 @@ Only authentificated users can make adjustemts to article list.
 Unauthenticated users only have the read option.
 You should be able to register and add items to the article section using local mongoDB database.
 
-Please node that the "Contact me" button is fake.
+Please note that the "Contact me" button is fake.
 It only goes into my Mailtrap inbox.
 
 
