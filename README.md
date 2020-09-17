@@ -18,7 +18,7 @@ https://nodejs.org/en/
 
 
 ## Installation
-Open a terminal pointing to the projet folder and type the followings commands :
+Open a terminal pointing to the projet folder and type the following commands :
 
 ```bash
 npm install
@@ -32,7 +32,7 @@ http://localhost:3000/
 
 Please use Firefox or Google Chrome, the date part with Safari or Edge is a bit.. funky ~
 
-If everithing works you should see a line in terminal saying : "-: Mongoose connection open :-"
+If everything works you should see a line in terminal saying : "-: Mongoose connection open :-"
 If not, check your installation of mongo.
 
 
