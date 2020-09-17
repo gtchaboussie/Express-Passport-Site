@@ -38,9 +38,9 @@ If not, check your installation of mongo.
 
 ## What does this do ?
 This project simulates a registering process, and then authentification using a Passport local strategy.
-Only authentificated users can make adjustemts to article list.
+Only authentificated users can make adjustemts to an article list.
 Unauthenticated users only have the read option.
-You should be able to register and add items to the article section using local mongoDB database.
+You should be able to register, then connect, and finaly add items to the article section using local mongoDB database.
 
 Please node that the "Contact me" button is fake.
 It only goes into my Mailtrap inbox.
