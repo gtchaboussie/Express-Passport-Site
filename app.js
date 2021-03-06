@@ -24,10 +24,8 @@ const port = ( process.env.PORT || 3000 );
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //serving static files
-//app.use(express.static(__dirname+'public'));
 app.use(express.static('public/'));
 app.use(favicon(__dirname + '/public/favicon.png'));
-
 
 
 //VIEW ENGINE

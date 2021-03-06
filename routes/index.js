@@ -153,7 +153,7 @@ router.post('/article/edit/:_id', checkAuthentication,
             operations.update( id, req.body );
             res.redirect('/articles');
         }
-        else{
+        else {
             res.render('article_add',{
                 user: req.user,
                 errors: errors.array(),
